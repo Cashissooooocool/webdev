@@ -42,3 +42,29 @@ body {
     border-bottom: 100px solid yellow;
 
 }
+
+#six-pointed-star{
+    --star-color:#0038b8;
+    --sqrt-3:1.73205080757;
+margin: 0 auto;
+    font-size:10em;
+    width: 0;
+    height: 0;
+    position:relative;
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+    border-bottom: calc( 1em * var(--sqrt-3) ) solid var(--star-color);
+
+}
+
+#six-pointed-star:after{
+    content:"";
+    position:absolute;
+    width: 0;
+    height: 0;
+    left:-1em;
+    top:calc( 1em * var(--sqrt-3) / 3 );
+    border-left: 1em solid transparent;
+    border-right: 1em solid transparent;
+    border-top: calc( 1em * var(--sqrt-3)  ) solid var(--star-color);
+}
