@@ -1,0 +1,67 @@
+body {
+    background-color: purple;
+}
+
+#italy {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat 1fr;
+    height: 300px;
+    width: 400px;
+}
+
+#italy-red {
+    background-color: red;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+#italy-green {
+    background-color: green;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+}
+
+#italy-white {
+    background-color: white;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+#japan {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 300px;
+    width: 400px;
+    background-color: white;
+}
+
+#japan-red {
+    background-color: red;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    border-radius: 50%;
+}
+
+#belgium {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat 1fr;
+    height: 300px;
+    width: 400px;
+    background-color: yellow;
+}
+
+#belgium-red {
+    background-color: red;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+#belgium-yellow {
+    background-color: black;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
