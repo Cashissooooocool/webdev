@@ -1,0 +1,85 @@
+header {
+    background-color: purple;
+    height: 20vh;
+    margin: 10px;
+    animation: color-swap 5s linear 2s infinite;
+}
+
+nav > div {
+    background-color: skyblue;
+    height: 50px;
+    margin: 10px;
+}
+
+aside {
+    background-color: royalblue;
+    height: 50vh;
+    margin: 10px;
+}
+
+footer {
+    background-color: blue;
+    height: 10vh;
+    margin: 10px;
+}
+
+@keyframes color-swap {
+    0% {
+        background-color: purple;
+    }
+    25% {
+        background-color: orange;
+    }
+    50% {
+        background-color: green;
+    }
+    75% {
+        background-color: red;
+    }
+    100% {
+        background-color: purple;
+    }
+    from{
+        width: 100%;
+    }
+    to{
+        width: 25%;
+    }
+
+}
+
+@keyframe rotate {
+
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        height: 15vh;
+    }
+
+    #content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    body{
+        width: 100vw
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    nav > div {
+        height: 25px;
+        width: 100px;
+    }
+
+    aside {
+        width: 25vw;
+        float: right;
+    }
+
+    
+}
