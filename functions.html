@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="functions.css">
+    </head>
+    <body>
+        <div id="here"></div>
+        <div>
+            <form>
+                <input type="number" id="children" placeholder="Enter a number">
+                <input type="text" id="name" placeholder="Enter a name">
+                <input type="text" id="job" placeholder="Enter a job">
+                <button onclick="tellFortune()">Tell my fortune</button>
+            </form>
+            <p id="fortune"></p>
+        </div>
+        <div>
+        <input type="number" id="name" placeholder="Enter your dog's age" />
+        <button onclick="calculateDogAge()">Calulate Age</button>
+        <p id="age"></p>
+        </div>
+        <div>
+            <input type="number" id="current-age" placeholder="enter your age" />
+            <input type="number" id="amount-per-day" placeholder="enter amount per day" />
+            <button onclick="calculateSupply()">Calculate Supply</button>
+            <p id="supply"></p>
+        </div>
+        <div>
+            <input type="number" id="radius" placeholder="enter radius" />
+            <button onclick="calcCircumference()">Calculate Circumference</button>
+            <p id="circumference"></p>
+        </div>
+        <div>
+            <input type="number" id="celsius" placeholder="enter celsius" />
+            <button onclick="celsiustoFahrenheit()">Celsius to Fahrenheit</button>
+            <p id="fahrenhet"></p>
+        </div>
+    </body>
+    <footer>
+<script src="functions.js"></script>
+    </footer>
+</html>
