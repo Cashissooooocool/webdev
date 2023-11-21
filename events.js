@@ -24,6 +24,34 @@ document.getElementById("shape").addEventListener("wheel", function () {
     document.getElementById("shape").style.backgroundColor = "green";
 });
 
-document.addEventListener("dragstart", function () {
-    event.dataTransfer("text" )
+document.addEventListener("dragstart", function (event) {
+    event.dataTransfer.setData("text", event.target.id);
 });
+
+document.addEventListener("drag", function (event) {
+    document.getElementById("demo").innerHTML = "The text is being dragged";
+});
+
+document.addEventListener("dragover", function(event) {
+    event.preventDefault();
+})
+
+document.addEventListener("drop", function(event) {
+    event.preventDefault();
+    if ( event.target.className == "droptarget") {
+        const data = event.dataTransfer.getData("Text");
+        event.target.appendChild(document.getElementById(data));
+        document.getElementById("demo").innerHTML = "The text was dropped";
+    }
+});
+
+document.ondragover = function(event) {
+    event.preventDefault();
+};
+
+document.ondrop = function(event) {
+    event.preventDefault();
+    var data = event.dataTransfer.getData("Text");
+    event.target.appendChild(document.getElementById(data));
+    document.getElementById("demo").innerHTML = "the p element was dropped";
+};

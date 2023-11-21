@@ -1,0 +1,17 @@
+body {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+}
+
+#income {
+    background-color: yellow;
+    height: 100px;
+    width: 500px;
+    font-family: serif;
+    font-weight: bold;
+}
+
+::placeholder {
+    color: gold
+}
