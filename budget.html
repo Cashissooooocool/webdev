@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <link rel="stylesheet" href="budget.css">
+     <link rel="stylesheet" href="budget.css">
     </head>
     <body>
-        <input id="income" style="font-size:80px; color:blue" class="no=ouline" type="text">
+        <input type="number" id="salary"  placeholder="salary">
+        <input type="number" id="rent"  placeholder="rent">
+        <input type="number" id="savings"  placeholder="savings">
+        <button onclick="calc()">your budget</button>
+        <div id="total" class="tip"></div>
+        <ul id="first-tip" class="tip">spend less</ul>
+        <ul id="second-tip" class="tip">save more</ul>
+        <ul id="third-tip" class="tip">get a better job</ul>
     </body>
     <footer>
         <script src="budget.js"></script>
     </footer>
 </html>
+

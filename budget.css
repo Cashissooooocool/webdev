@@ -15,3 +15,7 @@ body {
 ::placeholder {
     color: gold
 }
+
+.tip {
+    visibility: hidden;
+}
