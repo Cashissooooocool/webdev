@@ -2,6 +2,7 @@
 function calc() {
     let salary = document.getElementById("salary").value;
     let rent = document.getElementById("rent").value;
+    let savings = document.getElementById("savings").value;
     
     
     let total = salary - rent - savings;
